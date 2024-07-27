@@ -3,54 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inside My Mind</title>
-    <link rel="stylesheet" href="styles-inside-my-mind.css">
+    <title>Inside My Mind - Solomon Kim's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="terminal-background text-text h-screen flex flex-col justify-center items-center">
-    <div class="container w-full flex flex-col items-center justify-center">
-        <header class="text-center">
-            <p class="font-bold text-2xl">INSIDE MY MIND</p>
-            <p>Exploring the depths of my thoughts. All opinions are my own.</p>
+<body>
+    <div class="inside-my-mind-container">
+        <header class="inside-my-mind-header">
+            <h1>INSIDE MY MIND v1.0</h1>
+            <p>Solomon Kim. Full-Stack Software Engineer.</p>
         </header>
-        <main class="py-8 text-center">
-            <h1 class="font-bold mt-8 mb-2 text-lg visited">Recent Posts:</h1>
-            <ul class="not-prose space-y-4 md:space-y-2">
-                <li class="flex flex-row justify-between hover:bg-opacity-10 hover:bg-text -mx-2 px-2 rounded space-x-8">
-                    <a href="#" class="underline text-blue hover:text-lavender visited:text-mauve">Post Title 1</a>
-                    <div class="text-right">
-                        <time datetime="2024-07-10">Jul 10, 2024</time>
-                    </div>
-                </li>
-                <!-- Add more posts here -->
-            </ul>
+        <main class="inside-my-mind-main">
+            <div class="inside-my-mind-item">
+                <a href="#musing1" class="inside-my-mind-link">What technologies do you specialize in?</a>
+                <span>Coming soon, 2024</span>
+            </div>
+            <div class="inside-my-mind-item">
+                <a href="#musing2" class="inside-my-mind-link">How many years of experience do you have?</a>
+                <span>Coming soon, 2024</span>
+            </div>
+            <div class="inside-my-mind-item">
+                <a href="#musing3" class="inside-my-mind-link">Can you provide examples of your work?</a>
+                <span>Coming soon, 2024</span>
+            </div>
+            <div class="inside-my-mind-item">
+                <a href="#musing4" class="inside-my-mind-link">What is your workflow for starting a new project?</a>
+                <span>Coming soon, 2024</span>
+            </div>
+            <div class="inside-my-mind-item">
+                <a href="#musing5" class="inside-my-mind-link">How do you keep up with the latest trends in software engineering?</a>
+                <span>Coming soon, 2024</span>
+            </div>
+            <div class="inside-my-mind-item">
+                <a href="#musing6" class="inside-my-mind-link">What motivates you to create software?</a>
+                <span>Coming soon, 2024</span>
+            </div>
         </main>
-        <footer class="text-center mt-8">
-            <div class="flex flex-row justify-center space-x-2">
-                <a href="https://github.com/solomonkim98" class="underline text-blue hover:text-lavender visited:text-mauve">github</a>
-                <a href="https://linkedin.com/in/solomonjasperkim" class="underline text-blue hover:text-lavender visited:text-mauve">linkedin</a>
-                <a href="https://x.com/solomonjaskim" class="underline text-blue hover:text-lavender visited:text-mauve">x.com</a>
-            </div>
-            <p class="text-xs opacity-30 mt-2">inbox open!</p>
-            <p class="text-sm opacity-50 pt-2">&copy; 2024 Solomon Kim. All rights reserved.</p>
-        </footer>
-    </div>
-    <div class="hidden sm:block absolute w-full bottom-0">
-        <footer class="w-full bg-crust flex flex-row leading-tight">
-            <span id="status-indicator" class="bg-blue font-bold text-base inline-block leading-tight">&nbsp;NORMAL&nbsp;</span>
-            <div id="project-list" class="flex flex-row bg-surface0 ml-auto">
-                <a href="https://github.com/solomonkim98" class="underline text-blue hover:text-lavender visited:text-mauve">github</a>
-                <span>&nbsp;</span>
-                <a href="https://linkedin.com/in/solomonjasperkim" class="underline text-blue hover:text-lavender visited:text-mauve">linkedin</a>
-                <span>&nbsp;</span>
-                <a href="https://x.com/solomonjaskim" class="underline text-blue hover:text-lavender visited:text-mauve">x.com</a>
-                <span>&nbsp;</span>
+        <footer class="inside-my-mind-footer">
+            <p>&copy; 2024 Solomon Kim</p>
+            <div class="social-links">
+                <a href="https://github.com/solomonkim98" target="_blank">github</a>
+                <a href="https://x.com/solomonjaskim" target="_blank">x.com</a>
+                <a href="https://solomonjasperkim.com">home</a>
             </div>
         </footer>
-        <div id="command-line" class="w-full flex flex-row bg-base">
-            <input aria-hidden="true" id="command-line-input" type="text" class="bg-base focus:outline-none active:outline-none cursor-default caret-transparent m-0">
-            <div id="caret" aria-hidden="true" class="bg-text inline-block">&nbsp;</div>
-            <p aria-hidden="true" id="status-text" class="absolute w-full h-full bg-base hidden italic"></p>
-        </div>
     </div>
+    <script src="src/scripts.js"></script>
 </body>
 </html>
