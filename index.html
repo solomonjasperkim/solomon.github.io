@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solomon Kim's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="container"></div>
+    <div class="frame">
+        <div class="frame_line frame_line-left"></div>
+        <div class="frame_line frame_line-right"></div>
+        <div class=" frame_line frame_line-top"></div>
+        <div class="frame_line frame_line-bottom"></div>
+    </div>
+    <div class="content">
+        <div class="left-column">
+            <h1>Solomon Kim</h1>
+            <p>Full-Stack Software Engineer</p>
+            <ul class="nav">
+                <li><a href="#projects" id="projects-link">Projects</a></li>
+                <li><a href="#info" id="info-link">Info</a></li>
+                <li><a href="#contact" id="contact-link">Contact</a></li>
+                <li><a href="inside-my-mind.html" id="inside-my-mind-link">Inside My Mind</a></li> <!-- Updated link -->
+            </ul>
+        </div>
+        <div class="right-column">
+            <p id="born-text">Born in 1998 in New Jersey.</p>
+            <p id="engineer-text">As a software engineer, I view each line of code as a brushstroke, each function as a composition. I strive to create software that not only solves problems but also resonates with beauty and elegance. My mission is to blend technical precision with creative expression, exploring the endless possibilities of software as an art form.</p>
+        </div>
+    </div>
+
+    <!-- Project Panel -->
+    <div id="project-panel" class="project-panel">
+        <button class="close-button" id="close-project-panel">&times;</button>
+        <h2>muse</h2>
+        <p>Music Recommender - Machine Learning Model</p>
+        <a href="https://github.com/solomonkim98/muse" target="_blank" class="arrow-button">&#8594;</a>
+    </div>
+
+    <!-- Info Panel -->
+    <div id="info-panel" class="info-panel">
+        <button class="close-button" id="close-info-panel">&times;</button>
+        <h2>Connect with me</h2>
+        <div class="info-buttons">
+            <a href="https://github.com/solomonkim98" target="_blank" class="info-button">GitHub</a>
+            <a href="https://linkedin.com/in/solomonjasperkim" target="_blank" class="info-button">LinkedIn</a>
+            <a href="https://x.com/solomonjaskim" target="_blank" class="info-button">X</a>
+        </div>
+    </div>
+
+    <!-- Contact Panel -->
+    <div id="contact-panel" class="contact-panel">
+        <button class="close-button" id="close-contact-panel">&times;</button>
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <div class="form-group half-width">
+                <input type="text" id="first-name" name="first-name" placeholder="First Name" required>
+                <input type="text" id="last-name" name="last-name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group full-width">
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="form-group full-width">
+                <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+            </div>
+            <div class="form-group full-width">
+                <input type="text" id="subject" name="subject" placeholder="Subject" required>
+            </div>
+            <div class="form-group full-width">
+                <textarea id="body" name="body" placeholder="Body" required></textarea>
+            </div>
+            <button type="submit" class="submit-button">Send</button>
+        </form>
+    </div>
+
+    <script type="module" src="src/main.js"></script>
+    <script src="src/scripts.js"></script>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        (function(){
+            emailjs.init("QQw1Z7wNhilLr9_Fn"); // Your actual public key (User ID)
+        })();
+    </script>
+</body>
+</html>

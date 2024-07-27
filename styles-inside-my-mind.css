@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'NewYork';
+    src: url('src/fonts/csrodney.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* Resetting and base styles */
+*, *:before, *:after {
+    box-sizing: border-box;
+    -webkit-user-select: inherit;
+    user-select: inherit;
+    -webkit-user-drag: inherit;
+    -webkit-tap-highlight-color: inherit;
+    backface-visibility: inherit;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    line-height: 1;
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-user-drag: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    font-family: 'NewYork', sans-serif;
+    background-color: #000000;
+    color: #ffffff;
+}
+
+body {
+    font-family: 'NewYork', sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    font-feature-settings: "palt";
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overscroll-behavior: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px; /* Added padding for better spacing */
+}
+
+.inside-my-mind-container {
+    text-align: left;
+    max-width: 800px;
+    width: 100%;
+    padding: 20px; /* Added padding for better spacing */
+}
+
+.inside-my-mind-header {
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c7c7c7;
+}
+
+.inside-my-mind-header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.inside-my-mind-header p {
+    font-size: 1.2em;
+    color: #c7c7c7;
+}
+
+.inside-my-mind-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.inside-my-mind-item {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Align items center for vertical alignment */
+}
+
+.inside-my-mind-link {
+    font-size: 1.2em;
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+.inside-my-mind-link:hover {
+    text-decoration: underline;
+}
+
+.inside-my-mind-item span {
+    font-size: 1em;
+    color: #c7c7c7;
+}
+
+.inside-my-mind-footer {
+    margin-top: 30px;
+    padding-top: 10px;
+    border-top: 1px solid #c7c7c7;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inside-my-mind-footer p {
+    font-size: 1em;
+}
+
+.social-links {
+    display: flex;
+    gap: 20px;
+}
+
+.social-links a {
+    color: #c7c7c7;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .inside-my-mind-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .inside-my-mind-link {
+        margin-bottom: 5px;
+    }
+
+    .inside-my-mind-footer {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .social-links {
+        margin-top: 10px;
+    }
+}
+
+/* General reset and base styles */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    height: 100%;
+    font-family: 'CommitMono', monospace, sans-serif;
+    background-color: #0d0d0d;
+    color: #e6e6e6;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.terminal-background {
+    background-color: #1e1e1e;
+}
+
+a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Specific styles for the 'Inside My Mind' page */
+.text-text {
+    color: #e6e6e6;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+
+.text-sm {
+    font-size: .875rem;
+    line-height: 1.25rem;
+}
+
+.text-xs {
+    font-size: .75rem;
+    line-height: 1rem;
+}
+
+.leading-none {
+    line-height: 1;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.p-8 {
+    padding: 2rem;
+}
+
+.py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.mb-2 {
+    margin-bottom: .5rem;
+}
+
+.mt-8 {
+    margin-top: 2rem;
+}
+
+.space-y-4 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: 1rem;
+}
+
+.space-y-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-top: .5rem;
+}
+
+.space-x-2 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: .5rem;
+}
+
+.space-x-8 > :not([hidden]) ~ :not([hidden]) {
+    margin-left: 2rem;
+}
+
+.max-w-4xl {
+    max-width: 56rem;
+}
+
+.hover\:bg-opacity-10:hover {
+    background-color: rgba(230, 230, 230, 0.1);
+}
+
+.rounded {
+    border-radius: .25rem;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.underline\:text-lavender:hover {
+    color: #b19cd9;
+}
+
+.visited\:text-mauve:visited {
+    color: #e0b0ff;
+}
+
+.bg-blue {
+    background-color: #3498db;
+}
+
+.bg-crust {
+    background-color: #2c3e50;
+}
+
+.bg-surface0 {
+    background-color: #34495e;
+}
+
+.bg-base {
+    background-color: #1e1e1e;
+}
+
+.bg-text {
+    background-color: #e6e6e6;
+}
+
+.flex {
+    display: flex;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.leading-tight {
+    line-height: 1.25;
+}
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.h-full {
+    height: 100%;
+}
+
+.h-screen {
+    height: 100vh;
+}
+
+.m-auto {
+    margin: auto;
+}
+
+.sm\:visible {
+    visibility: visible;
+}
+
+.sm\:hidden {
+    display: none;
+}
+
+@media (min-width: 640px) {
+    .sm\:block {
+        display: block;
+    }
+
+    .sm\:flex {
+        display: flex;
+    }
+}
+
+/* Footer styles */
+#status-indicator {
+    padding: 0.5rem;
+    text-transform: uppercase;
+}
+
+#project-list span,
+#contact-list span {
+    margin: 0 0.5rem;
+}
+
+footer a {
+    margin: 0 0.5rem;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
